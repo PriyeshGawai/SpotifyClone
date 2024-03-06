@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');/*font-family: 'Ubuntu', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');/*font-family: 'Varela Round', sans-serif;*/
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    font-family: 'ubuntu',sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: navy;
+    color: antiquewhite;
+}
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 44px;
+    padding:0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 65vh;
+    background-color: rgb(70, 54, 54);
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 100%;
+    /* break-inside: initial; */
+}
+
+.Bottom{
+    position: sticky;
+    height: 60px;
+    background-color: navy;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    /* padding: 0; */
+}
+
+#MyProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+.icon{
+    margin-top: 14px;
+}
+.icon i{
+    cursor: pointer;
+    width: 8px;
+    padding: 0 10px;
+}
+.SongItemContainer{
+    margin-top: 54px;
+}
+.SongItem{
+height: 40px;
+display: flex;
+background-color:darkseagreen;
+width: 80%;
+color:whitesmoke;
+margin: 12px 0;
+justify-content: space-between;
+align-items: center;
+border-radius: 34px;
+}
+.SongItem img{
+    width: 40px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+.songInfo{
+    position: absolute;
+    left: 9.5vw;
+}
+.songInfo img{
+   opacity: 0;
+   transition: opacity 0.3s ease-in;
+}
+.timestamp{
+    margin: 0 23px;
+   
+}
+.timestamp i{
+    cursor: pointer;
+}
