@@ -69,8 +69,8 @@ Array.from(document.getElementsByClassName("SongItemPlay")).forEach((element)=>{
              songIndex=e.target.id;
             masterSongName.innerText=song[songIndex-1].SongName;
             gif.style.opacity=1;
-            e.target.classList.remove('fa-circle-pause');
-            e.target.classList.add('fa-circle-play');
+            e.target.classList.remove('fa-circle-play');
+            e.target.classList.add('fa-circle-pause');
             audioElement.src='songs/'+(songIndex+'.mp3');
             audioElement.currentTime=0;
             audioElement.play();
@@ -82,8 +82,8 @@ Array.from(document.getElementsByClassName("SongItemPlay")).forEach((element)=>{
             songIndex=e.target.id;
             masterSongName.innerText=song[songIndex-1].SongName;
             gif.style.opacity=0;
-            e.target.classList.remove('fa-circle-play');
-            e.target.classList.add('fa-circle-pause');
+            e.target.classList.remove('fa-circle-pause');
+            e.target.classList.add('fa-circle-play');
             audioElement.src='songs/'+(songIndex+'.mp3');
             audioElement.currentTime=0;
             audioElement.pause();
