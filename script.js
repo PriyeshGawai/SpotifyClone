@@ -89,6 +89,7 @@ Array.from(document.getElementsByClassName("SongItemPlay")).forEach((element)=>{
             audioElement.pause();
             masterPlay.classList.remove('fa-circle-pause');
             masterPlay.classList.add('fa-circle-play');
+           
         }
     })
 });
@@ -102,7 +103,9 @@ document.getElementById('next').addEventListener('click', ()=>{
     audioElement.currentTime=0;
     audioElement.play();
     masterPlay.classList.remove('fa-circle-play');
-    masterPlay.classList.add('fa-circle-pause');   
+    masterPlay.classList.add('fa-circle-pause'); 
+    songIndex.classList.remove('fa-circle-play');
+    songIndex.classList.add('fa-circle-pause');
 });
 
 document.getElementById('previous').addEventListener('click', ()=>{
@@ -114,5 +117,7 @@ document.getElementById('previous').addEventListener('click', ()=>{
     audioElement.currentTime=0;
     audioElement.play();
     masterPlay.classList.add('fa-circle-play');
-    masterPlay.classList.remove('fa-circle-pause');   
+    masterPlay.classList.remove('fa-circle-pause');
+    songIndex.classList.remove('fa-circle-play');
+    songIndex.classList.add('fa-circle-pause');
 });
