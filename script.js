@@ -78,7 +78,7 @@ Array.from(document.getElementsByClassName("SongItemPlay")).forEach((element)=>{
             masterPlay.classList.add('fa-circle-pause');
         }
         else{
-          
+            makeAllPlays();
             masterSongName.innerText=song[songIndex].SongName;
             gif.style.opacity=0;
             songIndex=e.target.id;
