@@ -98,7 +98,7 @@ document.getElementById('next').addEventListener('click', ()=>{
     else songIndex++;
     audioElement.src='songs/'+(songIndex+'.mp3');
     gif.style.opacity=1;
-    masterSongName.innerText=song[songIndex].SongName;
+    masterSongName.innerText=song[songIndex-1].SongName;
     audioElement.currentTime=0;
     audioElement.play();
     masterPlay.classList.remove('fa-circle-play');
@@ -110,7 +110,7 @@ document.getElementById('previous').addEventListener('click', ()=>{
     else songIndex--;
     audioElement.src='songs/'+(songIndex+'.mp3');
     gif.style.opacity=1;
-    masterSongName.innerText=song[songIndex].SongName;
+    masterSongName.innerText=song[songIndex-1].SongName;
     audioElement.currentTime=0;
     audioElement.play();
     masterPlay.classList.add('fa-circle-play');
