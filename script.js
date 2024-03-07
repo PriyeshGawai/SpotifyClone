@@ -79,13 +79,13 @@ Array.from(document.getElementsByClassName("SongItemPlay")).forEach((element)=>{
         }
         else{
           
-            // masterSongName.innerText=song[songIndex].SongName;
+            masterSongName.innerText=song[songIndex].SongName;
             gif.style.opacity=0;
             songIndex=e.target.id;
             e.target.classList.remove('fa-circle-pause');
             e.target.classList.add('fa-circle-play');
             audioElement.src='songs/'+(songIndex+'.mp3');
-            // audioElement.currentTime=0;
+            audioElement.currentTime=0;
             audioElement.pause();
             masterPlay.classList.remove('fa-circle-pause');
             masterPlay.classList.add('fa-circle-play');
