@@ -66,7 +66,6 @@ Array.from(document.getElementsByClassName("SongItemPlay")).forEach((element)=>{
         console.log(e);
         makeAllPlays();
         if(audioElement.play ){
-           
             songIndex=e.target.id;
             masterSongName.innerText=song[songIndex-1].SongName;
             gif.style.opacity=1;
@@ -80,7 +79,6 @@ Array.from(document.getElementsByClassName("SongItemPlay")).forEach((element)=>{
             indexPlay(songIndex);
         }
         else if(audioElement.pause ||audioElement.currentTime<=0){
-           
             songIndex=e.target.id;
             masterSongName.innerText=song[songIndex-1].SongName;
             gif.style.opacity=0;
